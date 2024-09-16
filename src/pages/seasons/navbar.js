@@ -24,6 +24,8 @@ export default function Navbar() {
         justify={"space-between"}
         fontSize="25px" color="white">
 
+          {/* Primeiro menu nav bar */}
+
           <Flex 
           justify={"center"} 
           align={"center"}>
@@ -42,10 +44,44 @@ export default function Navbar() {
 
           </Flex>
 
-          <Flex>
+          {/* Segundo menu nav bar */}
 
-            <Flex>
-              <Switch></Switch>
+          <Flex
+          display={{md:"flex", base:"none"}}
+          borderRadius={"5px"}
+          pl="10px" pr="10px" pt="8px" pb="8px"
+          bgColor="#141414"
+          fontSize={"20px"}>
+
+            <Flex
+            _hover={{
+              bgColor:"#1C1C1C",
+              transition:"0.3s"
+            }}
+            cursor={"pointer"}
+            fontWeight={"bold"}
+            align={"center"}
+            h="40px"
+            borderRadius={"5px"}
+            bgColor={"black"}
+            pr="22px" pl="22px">
+              Work
+            </Flex>
+
+            <Flex 
+            ml="5px"
+            _hover={{
+              bgColor:"#1C1C1C",
+              transition:"0.3s"
+            }}
+            cursor={"pointer"}
+            fontWeight={"bold"}
+            align={"center"}
+            h="40px"
+            borderRadius={"2px"}
+            pr="22px" pl="22px"
+            >
+              About
             </Flex>
 
           </Flex>

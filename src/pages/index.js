@@ -21,11 +21,11 @@ export default function Index() {
     minH={"100vh"} bg="black"
     direction={"column"}>
 
-      <Flex p="30px" bg="black">
+      <Flex p="40px" bg="black">
         <Navbar />
       </Flex>
 
-      <Flex>
+      <Flex p="40px">
         <S01 />
       </Flex>
     
